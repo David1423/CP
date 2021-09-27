@@ -11,7 +11,7 @@ int main(){
     std::cin>>ele;
     int pos = binarySearch(arr, ele);
     if(pos!=-1)
-    std::cout<<"Element found at "<<pos+1<<" place";
+    std::cout<<"Element found at "<<pos+1<<" position";
     else
     std::cout<<"Element not found";
     
@@ -26,16 +26,17 @@ int binarySearch(int *arr, int ele){
 
     while(low<=high){
         
-        mid=low+(high-low)/2;
+        mid=(high+low)/2;
 
         if(ele==arr[mid]){
             return mid;
         }
         else if (ele<arr[mid])
-            high= mid;
+            high=mid;
         
         else if(ele>arr[mid])
             low=mid;
+        
     }//while
     return -1;
 }
