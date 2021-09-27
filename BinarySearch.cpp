@@ -3,7 +3,7 @@ int binarySearch(int *, int);
 
 //main function
 int main(){
-    //declaring an array or sorted elements.
+    //declaring an array of sorted elements.
     int arr[]={1,2,13,34,55,76,87,98,109,310};
     int ele;
 
