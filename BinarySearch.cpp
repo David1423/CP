@@ -24,7 +24,7 @@ int binarySearch(int *arr, int ele){
     int high=10;
     int mid = 0;
 
-    while(low<=high){
+    while(low<high){
         
         mid=(high+low)/2;
 
